@@ -56,3 +56,6 @@ def visualize_xor_boundary(X, y, weights_input_hidden, weights_hidden_output, bi
 
 X_xor = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 y_xor = np.array([[0], [1], [1], [0]])
+
+weights_input_hidden, weights_hidden_output, bias_hidden, bias_output = train_xor_nn(X_xor, y_xor)
+visualize_xor_boundary(X_xor, y_xor, weights_input_hidden, weights_hidden_output, bias_hidden, bias_output)
